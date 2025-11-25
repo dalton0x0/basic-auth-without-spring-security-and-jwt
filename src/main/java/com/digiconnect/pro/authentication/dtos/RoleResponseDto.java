@@ -7,6 +7,6 @@ import lombok.Data;
 @Data
 @Builder
 public class RoleResponseDto {
-    private Integer id;
+    private Long id;
     private RoleType name;
 }

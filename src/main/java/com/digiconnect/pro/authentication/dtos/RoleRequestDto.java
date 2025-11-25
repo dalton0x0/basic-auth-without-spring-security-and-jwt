@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 public class RoleRequestDto {
-    private Integer id;
+    private Long id;
     @NotNull(message = "Role name can not be null")
     private RoleType name;
 }

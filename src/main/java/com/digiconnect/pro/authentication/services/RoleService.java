@@ -6,8 +6,8 @@ import com.digiconnect.pro.authentication.dtos.RoleResponseDto;
 import java.util.List;
 
 public interface RoleService {
-    List<RoleResponseDto> getAllRoles();
-    RoleResponseDto getRoleById(Integer id);
-    RoleResponseDto createRole(RoleRequestDto roleRequestDto);
-    void deleteRoleById(Integer id);
+    List<RoleResponseDto> getAllRoles(String sessionToken);
+    RoleResponseDto getRoleById(Long id, String sessionToken);
+    RoleResponseDto createRole(RoleRequestDto roleRequestDto, String sessionToken);
+    void deleteRoleById(Long id, String sessionToken);
 }
